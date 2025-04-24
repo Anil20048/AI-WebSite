@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oracle Quote Section</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #2e2825;
+            color: #f4c4bc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            display: flex;
+            padding: 60px;
+            max-width: 1200px;
+            gap: 60px;
+            align-items: flex-start;
+        }
+        
+        .quote-section {
+            flex: 1;
+        }
+        
+        blockquote {
+            font-size: 2rem;
+            line-height: 1.5;
+            position: relative;
+            margin: 0;
+        }
+        
+        blockquote::before {
+            content: "“";
+            font-size: 4rem;
+            position: absolute;
+            left: -40px;
+            top: -20px;
+            color: #f4c4bc;
+        }
+        
+        .author {
+            font-weight: bold;
+            margin-top: 30px;
+            color: white;
+        }
+        
+        .read-more {
+            margin-top: 20px;
+            background: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #2e2825;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        
+        .stack-visual {
+            flex: 1;
+            background: #fdf1e0;
+            border-radius: 15px;
+            padding: 40px 20px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .stack-block {
+            height: 50px;
+            margin: 10px 0;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        
+        .saas {
+            background-color: #d04444;
+        }
+        
+        .ai {
+            background-color: #f7931e;
+        }
+        
+        .models {
+            background-color: #4a90e2;
+        }
+        
+        .data {
+            background-color: #50b58d;
+        }
+        
+        .infra {
+            background-color: #cfcfcf;
+            color: #333;
+        }
+        
+        .partners-label {
+            position: absolute;
+            right: 10px;
+            top: 40px;
+            background-color: #007cae;
+            color: white;
+            padding: 10px;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="quote-section">
+            <blockquote>
+                By offering integrated generative AI across its Fusion SaaS applications, Oracle directly connects to customer business value.
+            </blockquote>
+            <div class="author">Dave Vellante, Chief Analyst, theCUBE Research</div>
+            <button class="read-more">Read more</button>
+        </div>
+
+        <div class="stack-visual">
+            <div class="stack-block saas">SaaS Apps</div>
+            <div class="stack-block ai">AI Services</div>
+            <div class="stack-block models">Models</div>
+            <div class="stack-block data">Data</div>
+            <div class="stack-block infra">Infrastructure</div>
+            <div class="partners-label">Partners</div>
+        </div>
+    </div>
+</body>
+
+</html>
