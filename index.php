@@ -375,7 +375,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
                         business problems.</p>
                 </div>
                 <div class="card-logo">NIBIO</div>
-                <H1>Anil</H1>
+                
             </div>
             <div class="card">
                 <img src="image/rc05-ai-use-cases.avif" alt="Saving Norway’s forests">
